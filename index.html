@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="htmlRoot">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nedus Leather — OEM Leather Goods Manufacturer, Istanbul Turkey</title>
-<meta name="description" content="Istanbul-based OEM leather goods manufacturer. Handbags, wallets, SLG, belts. LWG Gold certified leather supply chain. Est. 2004.">
-<meta name="keywords" content="leather goods manufacturer Turkey, OEM leather bags Istanbul, LWG Gold tannery, handbag manufacturer Turkey, SLG manufacturer Istanbul, belt manufacturer Turkey, private label leather goods, CMT leather production">
-<meta name="author" content="Nedus Leather">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="Nedus Leather — OEM Leather Goods Manufacturer, Istanbul">
-<meta property="og:description" content="Istanbul-based OEM manufacturer for handbags, SLG and belts. LWG Gold certified. 150,000 pieces/year.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://nedusleather.com">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Nedus Leather — OEM Manufacturer Istanbul">
-<link rel="canonical" href="https://nedusleather.com">
-<meta name="geo.region" content="TR-34">
-<meta name="geo.placename" content="Istanbul">
 <meta name="description" content="Istanbul-based OEM leather goods manufacturer. Handbags, wallets, SLG, belts. LWG Gold certified leather supply chain. Serving global brands since 2000.">
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230d0b09'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='18' fill='%23b8883a' letter-spacing='1'%3EN%3C/text%3E%3C/svg%3E">
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.nedusleather.com/">
+<meta property="og:title" content="Nedus Leather — OEM Leather Goods Manufacturer, Istanbul Turkey">
+<meta property="og:description" content="Istanbul-based family OEM manufacturer. Handbags, wallets, SLG, belts. LWG Gold certified leather from our own tannery. Competitive MOQ, EU compliant.">
+<meta property="og:image" content="https://www.nedusleather.com/og-image.jpg">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Nedus Leather — OEM Leather Goods Manufacturer, Istanbul Turkey">
+<meta property="twitter:description" content="Istanbul-based family OEM manufacturer. Handbags, wallets, SLG, belts. LWG Gold certified leather. Competitive MOQ, EU compliant.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -256,6 +254,16 @@ footer{background:#0a0806;padding:3rem 0}
 @media(max-width:960px){
   .nav-center.open{display:flex;flex-direction:column;position:fixed;top:66px;left:0;right:0;background:var(--white);border-bottom:1px solid var(--border);padding:1.5rem 2.5rem;gap:1.25rem;z-index:299}
 }
+/* ── SUCCESS MODAL ── */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(13,11,9,0.7);z-index:9999;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
+.modal-overlay.active{display:flex}
+.modal-box{background:var(--white);max-width:440px;width:90%;padding:3rem 2.5rem;position:relative;animation:modalIn 0.3s ease}
+@keyframes modalIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.modal-icon{width:48px;height:48px;background:var(--ink);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem}
+.modal-title{font-family:var(--cg);font-size:26px;font-weight:400;color:var(--ink);margin-bottom:0.75rem}
+.modal-body{font-size:13.5px;color:var(--mid);line-height:1.8;font-weight:300;margin-bottom:2rem}
+.modal-close{width:100%;background:var(--ink);color:var(--white);border:none;padding:13px;font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;font-family:var(--ot);transition:background 0.25s}
+.modal-close:hover{background:var(--accent)}
 /* Fade-in on scroll */
 .fade-up{opacity:0;transform:translateY(28px);transition:opacity 0.65s ease,transform 0.65s ease}
 .fade-up.visible{opacity:1;transform:translateY(0)}
@@ -296,7 +304,7 @@ footer{background:#0a0806;padding:3rem 0}
   <div class="hero-left">
     <div class="hero-eye fade-up">
       <div class="hero-eye-line"></div>
-      <span class="label" data-key="hero_eye">OEM Leather Manufacturer · Güneş Cd. No:5-7, Terazidere, Bayrampaşa / İstanbul 34035</span>
+      <span class="label" data-key="hero_eye">OEM Leather Manufacturer · Istanbul, Turkey</span>
     </div>
     <h1 class="fade-up" style="animation-delay:0.1s" data-key="hero_h1">Your brand.<br><em>Our craftsmanship.</em><br>One supply chain.</h1>
     <p class="hero-desc fade-up" style="animation-delay:0.2s" data-key="hero_desc">Istanbul-based family manufacturer producing <strong>handbags, small leather goods and belts</strong> for global brands. Leather sourced from <strong>LWG Gold certified tanneries</strong>. Hardware from trusted global suppliers. Full flexibility — your specs, your approvals.</p>
@@ -405,7 +413,7 @@ footer{background:#0a0806;padding:3rem 0}
       </div>
       <div>
         <div class="supply-highlight">
-          <p data-key="supply_quote">"Our primary leather comes from Asen Tannery — LWG Gold certified, based in Tuzla's leather industrial zone in Istanbul. The same tannery that supplies some of Turkey most demanding export clients."</p>
+          <p data-key="supply_quote">"Our primary leather comes from Asen Tannery — LWG Gold certified, based in Tuzla's leather industrial zone in Istanbul. The same tannery that supplies some of Turkey's most demanding export clients."</p>
           <cite>— Nedus Leather, Istanbul</cite>
         </div>
       </div>
@@ -639,29 +647,14 @@ footer{background:#0a0806;padding:3rem 0}
       </div>
     </div>
 
-    <!-- photo grid placeholders -->
-    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:220px 220px;gap:3px;margin-bottom:3rem" class="fade-up">
-      <div style="grid-row:1/3;background:#1e1a16;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;border:1px solid rgba(255,255,255,0.05)">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(184,136,58,0.25)" stroke-width="0.8"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-        <p style="font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.15);margin-top:1rem" data-key="mfg_p1">Atelier — Production Floor</p>
-        <div style="position:absolute;bottom:1.25rem;left:1.5rem;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold2);border:1px solid rgba(184,136,58,0.25);padding:4px 10px">Main Floor</div>
-      </div>
-      <div style="background:#191511;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04)">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(184,136,58,0.2)" stroke-width="0.8"><path d="M6 3v12"/><circle cx="6" cy="18" r="3"/><path d="M6 9l6-6M6 3l6 6"/></svg>
-        <p style="font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.12);margin-top:0.75rem" data-key="mfg_p2">Cutting</p>
-      </div>
-      <div style="background:#161310;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04)">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(184,136,58,0.2)" stroke-width="0.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg>
-        <p style="font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.12);margin-top:0.75rem" data-key="mfg_p3">Stitching</p>
-      </div>
-      <div style="background:#161310;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04)">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(184,136,58,0.2)" stroke-width="0.8"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-        <p style="font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.12);margin-top:0.75rem" data-key="mfg_p4">Quality Control</p>
-      </div>
-      <div style="background:#1a1512;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04)">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(184,136,58,0.2)" stroke-width="0.8"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
-        <p style="font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.12);margin-top:0.75rem" data-key="mfg_p5">Packaging</p>
-      </div>
+    <!-- Production Video -->
+    <div style="position:relative;margin-bottom:3rem;border:1px solid rgba(255,255,255,0.08);overflow:hidden" class="fade-up">
+      <video id="prodVideo" muted loop playsinline preload="none"
+        style="width:100%;display:block;max-height:520px;object-fit:cover">
+        <source src="production.mp4" type="video/mp4">
+      </video>
+      <!-- gold label overlay -->
+      <div style="position:absolute;bottom:1.5rem;left:1.75rem;font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold2);border:1px solid rgba(184,136,58,0.35);padding:5px 12px;background:rgba(13,11,9,0.65);backdrop-filter:blur(4px)" data-key="mfg_p1">Atelier — Production Floor</div>
     </div>
 
     <!-- 3 capability columns -->
@@ -683,17 +676,6 @@ footer{background:#0a0806;padding:3rem 0}
       </div>
     </div>
 
-    <!-- PRODUCTION VIDEO - upload production.mp4 to same folder -->
-    <div style="margin-top:2rem;position:relative;border:1px solid rgba(255,255,255,0.08);overflow:hidden" class="fade-up">
-      <video id="prodVideo" autoplay muted loop playsinline style="width:100%;display:block;max-height:500px;object-fit:cover">
-        <source src="production.mp4" type="video/mp4">
-      </video>
-      <div style="position:absolute;bottom:1.25rem;left:1.5rem;display:flex;align-items:center;gap:10px">
-        <div style="width:7px;height:7px;background:#b8883a;border-radius:50%;animation:vpulse 2s infinite"></div>
-        <span style="font-size:9.5px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.55)">Production · Nedus Atelier · Istanbul</span>
-      </div>
-    </div>
-    <style>@keyframes vpulse{0%,100%{opacity:1}50%{opacity:0.3}}</style>
 
   </div>
 </section>
@@ -835,14 +817,14 @@ footer{background:#0a0806;padding:3rem 0}
           <div class="cinfo-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
           <div>
             <div class="cinfo-label" data-key="cl_addr">Location</div>
-            <div class="cinfo-val">Güneş Cd. No:5-7, Terazidere, Bayrampaşa / İstanbul 34035<br></div>
+            <div class="cinfo-val">Istanbul, Turkey<br></div>
           </div>
         </div>
         <div class="cinfo-row">
           <div class="cinfo-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
           <div>
             <div class="cinfo-label" data-key="cl_email">Email</div>
-            <div class="cinfo-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="50393e363f103e353425233c3531243835227e333f3d">[email&#160;protected]</a></div>
+            <div class="cinfo-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="abc2c5cdc4ebc5cecfded8c7cecadfc3ced985c8c4c6">[email&#160;protected]</a></div>
           </div>
         </div>
         <div class="cinfo-row">
@@ -881,20 +863,20 @@ footer{background:#0a0806;padding:3rem 0}
         <div class="form-row">
           <div class="form-group">
             <label data-key="fl_name">Your Name</label>
-            <input type="text" data-placeholder-key="fp_name" name="name" placeholder="Jane Smith">
+            <input type="text" id="f_name" data-placeholder-key="fp_name" placeholder="Jane Smith">
           </div>
           <div class="form-group">
             <label data-key="fl_company">Company / Brand</label>
-            <input type="text" data-placeholder-key="fp_company" name="company" placeholder="Brand Name">
+            <input type="text" id="f_company" data-placeholder-key="fp_company" placeholder="Brand Name">
           </div>
         </div>
         <div class="form-group">
           <label data-key="fl_email">Email Address</label>
-          <input type="email" name="email" placeholder="jane@yourbrand.com">
+          <input type="email" id="f_email" placeholder="jane@yourbrand.com">
         </div>
         <div class="form-group">
           <label data-key="fl_product">Product Category</label>
-          <select name="category">
+          <select id="f_product">
             <option value="" data-key="fs_select">Select category...</option>
             <option data-key="fs_bags">Handbags</option>
             <option data-key="fs_slg">Wallets & SLG</option>
@@ -904,12 +886,9 @@ footer{background:#0a0806;padding:3rem 0}
         </div>
         <div class="form-group">
           <label data-key="fl_msg">Your Brief</label>
-          <textarea data-placeholder-key="fp_msg" name="message" placeholder="Tell us about your product, quantity, references and any specific material or hardware requirements..."></textarea>
+          <textarea id="f_msg" data-placeholder-key="fp_msg" placeholder="Tell us about your product, quantity, references and any specific material or hardware requirements..."></textarea>
         </div>
-        <button class="btn-send" data-key="form_send" onclick="sendForm(event)">Send Enquiry →</button>
-        <div id="formSuccess" style="display:none;text-align:center;padding:1.5rem 0">
-          <p style="font-size:14px;color:rgba(255,255,255,0.6)">✓ &nbsp;Message sent — we will reply within 48h.</p>
-        </div>
+        <button class="btn-send" data-key="form_send" id="formSendBtn">Send Enquiry →</button>
       </div>
     </div>
   </div>
@@ -925,7 +904,7 @@ footer{background:#0a0806;padding:3rem 0}
       <a href="#why" data-key="nav_why">Why Us</a>
       <a href="#contact" data-key="nav_contact">Contact</a>
     </div>
-    <div class="footer-copy">© 2025 Nedus Leather · Güneş Cd. No:5-7, Terazidere, Bayrampaşa / İstanbul 34035</div>
+    <div class="footer-copy">© 2026 Nedus Leather · Istanbul, Turkey</div>
   </div>
 </footer>
 
@@ -934,7 +913,7 @@ footer{background:#0a0806;padding:3rem 0}
 const T = {
   en:{
     nav_supply:"Supply Chain", nav_products:"Products", nav_mfg:"Manufacturing", nav_why:"Why Us", nav_group:"Our Group", nav_process:"Process", nav_contact:"Contact", nav_cta:"Get a Quote",
-    hero_eye:"OEM Leather Manufacturer · Güneş Cd. No:5-7, Terazidere, Bayrampaşa / İstanbul 34035",
+    hero_eye:"OEM Leather Manufacturer · Istanbul, Turkey",
     hero_h1:"Your brand.<br><em>Our craftsmanship.</em><br>One supply chain.",
     hero_desc:"Istanbul-based family manufacturer producing <strong>handbags, small leather goods and belts</strong> for global brands. We own our tannery — <strong>LWG Gold certified, 50+ years</strong>. Full vertical control from raw hide to finished product.",
     hero_cta1:"Request a Sample", hero_cta2:"See Our Supply Chain",
@@ -945,7 +924,7 @@ const T = {
     supply_label:"Supply Chain Transparency",
     supply_h2:"We tell you exactly<br><em>where everything comes from.</em>",
     supply_p:"Global brands increasingly demand full supply chain visibility. At Nedus, we built our sourcing around that requirement — not as a compliance exercise, but as a competitive advantage.",
-    supply_quote:"Our primary leather comes from Asen Tannery — LWG Gold certified, Tuzla leather industrial zone, Istanbul. The same tannery supplying some of Turkey most demanding export clients.",
+    supply_quote:"Our primary leather comes from Asen Tannery — LWG Gold certified, Tuzla leather industrial zone, Istanbul. The same tannery supplying some of Turkey's most demanding export clients.",
     cn1_title:"Raw Hide", cn1_body:"Ethically sourced bovine hides, traceable origin",
     cn2_title:"Asen Tannery", cn2_body:"LWG Gold certified tannery, Tuzla / Istanbul",
     cn3_title:"Nedus Atelier", cn3_body:"Cutting, stitching, finishing, QC — Istanbul",
@@ -983,10 +962,10 @@ const T = {
     grp_label:"Our Ecosystem", grp_h2:"Vertically integrated.<br><em style=\"color:var(--accent)\">From hide to finished product.</em>",
     grp_sub:"Nedus sits at the centre of a family-owned group spanning tanning, manufacturing and branded retail. This vertical integration gives OEM clients a fully controlled, traceable supply chain under one ownership.",
     grp_nedus_body:"Istanbul-based OEM & CMT manufacturer producing handbags, small leather goods and belts for global brands. Est. 2004. 100+ skilled artisans.",
-    grp_asen_body:"LWG Gold certified tannery with 50+ years of experience, now in its second generation. Veg, chrome and white tanning. Tuzla, Istanbul. <a href=https://asenleather.com target=_blank style=color:#b8883a;font-size:11px>asenleather.com ↗</a>",
-    grp_beyza_body:"Luxury handcrafted leather cases and accessories. Sold in Apple Retail Stores across Europe. A testament to our design and production capability. <a href=https://beyzacases.com target=_blank style=color:#b8883a;font-size:11px>beyzacases.com ↗</a>",
+    grp_asen_body:"LWG Gold certified tannery with 50+ years of experience, now in its second generation. Veg, chrome and white tanning. Tuzla, Istanbul.",
+    grp_beyza_body:"Luxury handcrafted leather cases and accessories. Sold in Apple Retail Stores across Europe. A testament to our design and production capability.",
     grp_beyza_ref:"Reference", grp_beyza_apple:"Sold in Apple Retail Stores Europe · 2010",
-    grp_sens_body:"Premium handcrafted leather bags and small leather goods. Our in-house brand proving the design and quality standard we bring to every OEM client. <a href=https://sensbag.com target=_blank style=color:#b8883a;font-size:11px>sensbag.com ↗</a>",
+    grp_sens_body:"Premium handcrafted leather bags and small leather goods. Our in-house brand proving the design and quality standard we bring to every OEM client.",
     grp_note:"All entities are family-owned. When you work with Nedus, you have direct access to the entire value chain — from tannery to finished product — under one accountable ownership.",
     proc_label:"How It Works", proc_h2:"From enquiry to<br><em>your warehouse</em>",
     ps1_title:"Enquiry", ps1_body:"Send us your brief — product type, quantity, references, hardware preferences",
@@ -1055,7 +1034,7 @@ const T = {
     grp_label:"Ekosistemimiz", grp_h2:"Dikey entegre.<br><em style=\"color:var(--accent)\">Ham deriden bitmis urune.</em>",
     grp_sub:"Nedus, tabakhaneden uretime ve markaliniz perakendeye uzanan aile sirketler grubunun merkezinde yer aliyor.",
     grp_nedus_body:"Istanbul merkezli OEM ve CMT ureticisi. Canta, kucuk deri urunleri ve kemer. Kurulus: 2004. 100+ usta isci.",
-    grp_asen_body:"40+ yil deneyimli, LWG Gold sertifikali tabakhane. Veg, krom ve beyaz tabaklama. Yillik 100.000 adet kapasite. Tuzla, Istanbul. <a href=https://asenleather.com target=_blank style=color:#b8883a;font-size:11px>asenleather.com ↗</a>",
+    grp_asen_body:"40+ yil deneyimli, LWG Gold sertifikali tabakhane. Veg, krom ve beyaz tabaklama. Yillik 100.000 adet kapasite. Tuzla, Istanbul.",
     grp_beyza_body:"Luks el yapimi deri kilif ve aksesuar markasi. Avrupa Apple Retail Storelarda satildi. Tasarim ve uretim kalitemizin kaniti.",
     grp_beyza_ref:"Referans", grp_beyza_apple:"Apple Retail Stores Avrupa · 2010",
     grp_sens_body:"Premium el yapimi deri canta ve kucuk deri urunleri markasi. Her OEM musterimize sunmimiz kalite standardini kanitleyen kendi markamiz.",
@@ -1089,7 +1068,7 @@ const T = {
     supply_label:"Lieferkettentransparenz",
     supply_h2:"Wir sagen Ihnen genau,<br><em>woher alles kommt.</em>",
     supply_p:"Globale Marken fordern Lieferkettentransparenz. Bei Nedus haben wir unsere Beschaffung darum aufgebaut — als Wettbewerbsvorteil.",
-    supply_quote:"Unser Primärleder stammt von Asen Tannery — LWG Gold zertifiziert, Lederindustriezone Tuzla, Istanbul. <a href=https://asenleather.com target=_blank style=color:#b8883a;font-size:11px>asenleather.com ↗</a>",
+    supply_quote:"Unser Primärleder stammt von Asen Tannery — LWG Gold zertifiziert, Lederindustriezone Tuzla, Istanbul.",
     cn1_title:"Rohhaut", cn1_body:"Ethisch bezogene Rinderhäute, rückverfolgbare Herkunft",
     cn2_title:"Asen Gerberei", cn2_body:"LWG Gold zertifizierte Gerberei, Tuzla / Istanbul",
     cn3_title:"Nedus Atelier", cn3_body:"Zuschnitt, Nähen, Veredelung, QK — Istanbul",
@@ -1127,7 +1106,7 @@ const T = {
     grp_label:"Unser Ökosystem", grp_h2:"Vertikal integriert.<br><em style=\"color:var(--accent)\">Vom Fell zum fertigen Produkt.</em>",
     grp_sub:"Nedus steht im Zentrum einer familiengeführten Gruppe aus Gerberei, Produktion und Markeneinzelhandel.",
     grp_nedus_body:"Istanbuler OEM und CMT-Hersteller. Gegr. 2004. 100+ Fachhandwerker.",
-    grp_asen_body:"LWG Gold zertifizierte Gerberei, 40+ Jahre Erfahrung. 100.000 Stück Jahreskapazität. Tuzla, Istanbul. <a href=https://asenleather.com target=_blank style=color:#b8883a;font-size:11px>asenleather.com ↗</a>",
+    grp_asen_body:"LWG Gold zertifizierte Gerberei, 40+ Jahre Erfahrung. 100.000 Stück Jahreskapazität. Tuzla, Istanbul.",
     grp_beyza_body:"Luxus Lederhüllen. In Apple Retail Stores Europa verkauft. Beweis unserer Designkompetenz.",
     grp_beyza_ref:"Referenz", grp_beyza_apple:"Apple Retail Stores Europa · 2010",
     grp_sens_body:"Premium Ledertaschen. Eigenmarke die unseren Qualitätsstandard für OEM-Kunden belegt.",
@@ -1161,7 +1140,7 @@ const T = {
     supply_label:"Transparence approvisionnement",
     supply_h2:"Nous vous disons exactement<br><em>où tout provient.</em>",
     supply_p:"Les marques mondiales exigent une visibilité totale. Chez Nedus, nous avons construit notre approvisionnement en avantage concurrentiel.",
-    supply_quote:"Notre cuir principal vient de Asen Tannery — certifié LWG Gold, zone industrielle cuir de Tuzla, Istanbul. <a href=https://asenleather.com target=_blank style=color:#b8883a;font-size:11px>asenleather.com ↗</a>",
+    supply_quote:"Notre cuir principal vient de Asen Tannery — certifié LWG Gold, zone industrielle cuir de Tuzla, Istanbul.",
     cn1_title:"Peau brute", cn1_body:"Peaux bovines éthiques et traçables",
     cn2_title:"Asen Tannerie", cn2_body:"Tannerie certifiée LWG Gold, Tuzla / Istanbul",
     cn3_title:"Atelier Nedus", cn3_body:"Coupe, couture, finition, CQ — Istanbul",
@@ -1199,7 +1178,7 @@ const T = {
     grp_label:"Notre Écosystème", grp_h2:"Intégration verticale.<br><em style=\"color:var(--accent)\">Du cuir brut au produit fini.</em>",
     grp_sub:"Nedus est au centre du groupe familial couvrant tannerie, fabrication et retail de marque.",
     grp_nedus_body:"Fabricant OEM et CMT basé à Istanbul. Fondé 2004. 100+ artisans qualifiés.",
-    grp_asen_body:"Tannerie LWG Gold, 40+ ans expérience. 100 000 pièces annuelles. Tuzla, Istanbul. <a href=https://asenleather.com target=_blank style=color:#b8883a;font-size:11px>asenleather.com ↗</a>",
+    grp_asen_body:"Tannerie LWG Gold, 40+ ans expérience. 100 000 pièces annuelles. Tuzla, Istanbul.",
     grp_beyza_body:"Etuis cuir luxe. Vendus dans Apple Retail Stores en Europe. Preuve de notre capacité.",
     grp_beyza_ref:"Référence", grp_beyza_apple:"Apple Retail Stores Europe · 2010",
     grp_sens_body:"Sacs cuir premium. Notre marque propre attestant notre standard de qualité OEM.",
@@ -1226,10 +1205,17 @@ let lang = 'en';
 
 function setLang(l) {
   lang = l;
+  document.getElementById('htmlRoot').lang = l;
   document.querySelectorAll('.lb').forEach(b => b.classList.toggle('on', b.textContent === l.toUpperCase()));
   const d = T[l];
   document.querySelectorAll('[data-key]').forEach(el => {
-    if(d[el.dataset.key] !== undefined) el.innerHTML = d[el.dataset.key];
+    if(d[el.dataset.key] !== undefined) {
+      if(el.tagName === 'OPTION') {
+        el.textContent = d[el.dataset.key];
+      } else {
+        el.innerHTML = d[el.dataset.key];
+      }
+    }
   });
   document.querySelectorAll('[data-placeholder-key]').forEach(el => {
     if(d[el.dataset.placeholderKey] !== undefined) el.placeholder = d[el.dataset.placeholderKey];
@@ -1254,4 +1240,73 @@ document.querySelectorAll('.nav-center a').forEach(a => {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
 }, {threshold:0.1, rootMargin:'0px 0px -40px 0px'});
-document.querySelect
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Scroll-triggered video autoplay
+const prodVideo = document.getElementById('prodVideo');
+if (prodVideo) {
+  const videoObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        prodVideo.play().catch(() => {});
+      } else {
+        prodVideo.pause();
+      }
+    });
+  }, {threshold: 0.3});
+  videoObserver.observe(prodVideo);
+}
+
+// ── FORM SUBMIT ──
+document.getElementById('formSendBtn').addEventListener('click', function() {
+  const name    = document.getElementById('f_name').value.trim();
+  const company = document.getElementById('f_company').value.trim();
+  const email   = document.getElementById('f_email').value.trim();
+  const product = document.getElementById('f_product').value;
+  const msg     = document.getElementById('f_msg').value.trim();
+
+  if (!name)  { document.getElementById('f_name').focus(); return; }
+  if (!email || !email.includes('@')) { document.getElementById('f_email').focus(); return; }
+  if (!product) { document.getElementById('f_product').focus(); return; }
+  if (!msg)   { document.getElementById('f_msg').focus(); return; }
+
+  const subject = encodeURIComponent('Enquiry from ' + name + (company ? ' — ' + company : ''));
+  const body = encodeURIComponent(
+    'Name: ' + name + '\n' +
+    'Company: ' + company + '\n' +
+    'Email: ' + email + '\n' +
+    'Category: ' + product + '\n\n' +
+    msg
+  );
+  window.location.href = 'mailto:info@nedusleather.com?subject=' + subject + '&body=' + body;
+
+  document.getElementById('successModal').classList.add('active');
+  document.getElementById('f_name').value = '';
+  document.getElementById('f_company').value = '';
+  document.getElementById('f_email').value = '';
+  document.getElementById('f_product').value = '';
+  document.getElementById('f_msg').value = '';
+});
+
+function closeModal() {
+  document.getElementById('successModal').classList.remove('active');
+}
+document.getElementById('successModal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+</script>
+
+<!-- SUCCESS MODAL -->
+<div class="modal-overlay" id="successModal">
+  <div class="modal-box">
+    <div class="modal-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8883a" stroke-width="1.5"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <div class="modal-title">Enquiry Sent</div>
+    <div class="modal-body">Thank you for reaching out. Your email client should have opened with your message pre-filled. We'll be in touch within 48 hours.</div>
+    <button class="modal-close" onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+</body>
+</html>
